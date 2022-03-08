@@ -1,6 +1,11 @@
 import streamlit as st
 from predict_page import show_predict_page
 
+st.markdown(""" <style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style> """, unsafe_allow_html=True)
+
 logo = st.sidebar.image('insurance.jpg')
 
 information = st.sidebar.subheader('Background Information')
