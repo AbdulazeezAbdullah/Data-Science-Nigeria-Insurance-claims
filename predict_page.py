@@ -1,10 +1,10 @@
 import streamlit as st
-import pickle
+import joblib
 import numpy as np
 
 def load_model():
     with open('Random_Forest_Model.pkl', 'rb') as file:
-        model = pickle.load(file)
+        model = joblib.load(file)
     return model
 
 data = load_model()
