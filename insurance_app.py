@@ -239,16 +239,40 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stApp"] {
     font-weight: 500 !important;
 }
 
+/* Dropdown menu container */
+[data-baseweb="popover"],
+[data-baseweb="popover"] > div,
+[data-baseweb="menu"],
+ul[role="listbox"] {
+    background: #ffffff !important;
+    border: 1px solid #dce0f0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 30px rgba(60,79,224,.12) !important;
+}
+
 /* Dropdown menu options */
 [data-baseweb="popover"] li,
 [data-baseweb="menu"] li,
 [role="option"] {
+    background: #ffffff !important;
     color: #1a1f36 !important;
     font-family: 'DM Sans', sans-serif !important;
+    font-size: .9rem !important;
+    padding: .65rem 1rem !important;
 }
-[role="option"]:hover {
+
+/* Hover state */
+[role="option"]:hover,
+[data-baseweb="menu"] li:hover {
     background: #eef0ff !important;
     color: #3c4fe0 !important;
+}
+
+/* Currently selected option highlight */
+[aria-selected="true"] {
+    background: #eef0ff !important;
+    color: #3c4fe0 !important;
+    font-weight: 600 !important;
 }
 
 /* ── Predict button ── */
