@@ -224,8 +224,31 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stApp"] {
 }
 [data-baseweb="select"] > div {
     border-radius: 10px !important;
-    border-color: #dce0f0 !important;
+    border-color: #c4caf0 !important;
     background: #f8f9ff !important;
+    color: #1a1f36 !important;
+}
+
+/* Selected value text */
+[data-baseweb="select"] [data-testid="stMarkdownContainer"] p,
+[data-baseweb="select"] span,
+[data-baseweb="select"] div[class*="singleValue"],
+[data-baseweb="select"] > div > div,
+[data-baseweb="select"] input {
+    color: #1a1f36 !important;
+    font-weight: 500 !important;
+}
+
+/* Dropdown menu options */
+[data-baseweb="popover"] li,
+[data-baseweb="menu"] li,
+[role="option"] {
+    color: #1a1f36 !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+[role="option"]:hover {
+    background: #eef0ff !important;
+    color: #3c4fe0 !important;
 }
 
 /* ── Predict button ── */
