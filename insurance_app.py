@@ -464,7 +464,7 @@ with right:
     <div class="summary-card">
       <span class="summary-icon">🛡️</span>
       <div class="summary-label">Claim Estimator</div>
-      <div class="summary-amount"><span class="currency">₦</span>—</div>
+      <div class="summary-amount"><span class="currency">$</span>—</div>
       <div class="summary-divider"></div>
       <div style="font-size:.85rem;opacity:.75;line-height:1.6;">
         Complete the form on the left and click <strong>Predict</strong> to get your 
@@ -513,7 +513,7 @@ with right:
                 st.markdown(f"""
                 <div class="result-box">
                   <div class="r-label">Estimated Claim Amount</div>
-                  <div class="r-amount">₦{amount:,.2f}</div>
+                  <div class="r-amount">${amount:,.2f}</div>
                   <div class="r-sub">Based on {vehicles_involved} vehicle(s) · {incident_severity}</div>
                 </div>
                 """, unsafe_allow_html=True)
